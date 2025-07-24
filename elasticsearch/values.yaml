@@ -105,11 +105,11 @@ initResources: {}
 
 networkHost: "0.0.0.0"
 
-# volumeClaimTemplate:
-#   accessModes: ["ReadWriteOnce"]
-#   resources:
-#     requests:
-#       storage: 30Gi
+volumeClaimTemplate:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 5Gi
 
 rbac:
   create: false
