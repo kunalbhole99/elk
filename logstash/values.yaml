@@ -174,7 +174,7 @@ podAffinity: {}
 # the same time when bootstrapping the cluster
 podManagementPolicy: "Parallel"
 
-httpPort: 9600
+# httpPort: 9600
 
 # Custom ports to add to logstash
 extraPorts:
