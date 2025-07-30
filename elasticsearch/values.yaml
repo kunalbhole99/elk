@@ -21,8 +21,8 @@ roles:
   - remote_cluster_client
   - transform
 
-replicas: 3
-minimumMasterNodes: 2
+replicas: 1
+minimumMasterNodes: 1
 
 esMajorVersion: ""
 
@@ -109,7 +109,7 @@ volumeClaimTemplate:
   accessModes: ["ReadWriteOnce"]
   resources:
     requests:
-      storage: 2Gi
+      storage: 5Gi
   volumeName: "elk-pv-0"
 
 rbac:
@@ -138,7 +138,7 @@ podSecurityPolicy:
       - emptyDir
 
 persistence:
-  enabled: false
+  enabled: true
   labels:
     # Add default labels for the volumeClaimTemplate of the StatefulSet
     enabled: false
