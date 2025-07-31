@@ -21,7 +21,7 @@ roles:
   - remote_cluster_client
   - transform
 
-replicas: 1
+replicas: 2
 minimumMasterNodes: 
 
 esMajorVersion: ""
@@ -109,8 +109,8 @@ volumeClaimTemplate:
   accessModes: ["ReadWriteOnce"]
   resources:
     requests:
-      storage: 5Gi
-  volumeName: "elk-pv-0"
+      storage: 3Gi
+  # volumeName: "elk-pv-0"
 
 rbac:
   create: false
