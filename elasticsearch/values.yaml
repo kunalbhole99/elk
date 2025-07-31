@@ -45,8 +45,8 @@ esJvmOptions: {}
 # This will be appended to the current 'env:' key. You can use any of the kubernetes env
 # syntax here
 extraEnvs: []
- - name: ELASTIC_PASSWORD
-   value: "Admin@123"
+  - name: ELASTIC_PASSWORD
+    value: "Admin@123"
 
 # Allows you to load environment variables from kubernetes secret or config map
 envFrom: []
@@ -92,7 +92,7 @@ resources:
   #   cpu: "1000m"
   #   memory: "2Gi"
   limits:
-    cpu: "1000m"
+    cpu: "500m"
     memory: "0.2Gi"
 
 initResources: {}
